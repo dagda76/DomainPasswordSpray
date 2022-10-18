@@ -442,8 +442,6 @@ function Get-DomainUserList
             }
             catch
             {
-                if($badcount -eq "null")
-                $UserListArray += $samaccountname
                 continue
             }
             $currenttime = Get-Date
